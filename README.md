@@ -1,6 +1,6 @@
 # Su Xu's academic website
 
-Site URL: https://sxu509.github.io (publication pending)
+Site URL: https://sxu509.github.io
 
 Built with [Academic Pages](https://github.com/academicpages/academicpages.github.io).
 
