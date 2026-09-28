@@ -10,6 +10,6 @@ gallery:
     alt: Bobby
 ---
 
-Outside of research, I enjoy spending time with my partner and our two dogs, **PP and Bobby**, especially on hikes and weekend trips.
+When I’m not doing research, I love spending time with my partner and our two dogs, **PP and Bobby**. We enjoy going on hikes, taking weekend trips, and exploring new places together—but a lazy day at home with the dogs is pretty great, too.
 
 {% include gallery caption="PP and Bobby" class="personal-photos" %}
