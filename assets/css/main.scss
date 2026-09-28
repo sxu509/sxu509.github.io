@@ -54,7 +54,7 @@
   justify-content: flex-start;
   column-gap: 1em;
 }
-.personal-photos.half > img { width: 175px; max-width: 100%; }
+.personal-photos.half > img { width: 80px; max-width: 100%; }
 
 .author__urls-wrapper .btn { color: var(--global-text-color) !important; }
 
@@ -72,4 +72,10 @@ html[data-theme="dark"] {
 
 @media screen and (min-width: 925px) {
   .page { padding-right: 4%; }
+  .personal-photos.half > img { width: 120px; }
+  .sidebar {
+    position: sticky;
+    height: auto;
+    padding-top: 0 !important;
+  }
 }
