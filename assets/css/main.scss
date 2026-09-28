@@ -1,0 +1,69 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv"
+;
+
+/* Small adjustments to the Academic Pages layout. */
+:root {
+  --global-link-color: #236389;
+  --global-link-color-hover: #164362;
+  --global-link-color-visited: #236389;
+}
+
+.page__content { line-height: 1.7; }
+.page__content li { margin-bottom: 0.8em; }
+.page__title { margin-bottom: 1em; }
+.author__avatar img { border-radius: 6px; }
+.page__content img { border-radius: 4px; }
+.author__urls-wrapper .btn { color: var(--global-text-color) !important; }
+
+.page__footer {
+  position: relative;
+  bottom: auto;
+  color: var(--global-text-color);
+}
+
+html[data-theme="dark"] {
+  --global-link-color: #7dcbe6;
+  --global-link-color-hover: #b0e4f5;
+  --global-link-color-visited: #7dcbe6;
+}
+
+@media screen and (min-width: 925px) {
+  .page { padding-right: 4%; }
+}

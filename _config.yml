@@ -1,0 +1,89 @@
+locale: en-US
+site_theme: default
+title: "Su Xu"
+title_separator: "-"
+name: "Su Xu"
+description: "Su Xu is a postdoctoral fellow at UConn Health developing statistical and computational methods for single-cell and spatial omics."
+url: "https://sxu509.github.io"
+baseurl: ""
+repository: "sxu509/sxu509.github.io"
+
+author:
+  avatar: "su-xu.jpg"
+  name: "Su Xu"
+  bio: "Postdoctoral Fellow<br>Genetics and Genome Sciences"
+  location: "Farmington, CT"
+  employer: "UConn Health"
+  email: "suxu@uchc.edu"
+  googlescholar: "https://scholar.google.com/citations?user=nzTsqm4AAAAJ&hl=en"
+  researchgate: "https://www.researchgate.net/profile/Su-Xu-17"
+  github: "sxu509"
+
+breadcrumbs: false
+future: false
+read_more: disabled
+comments:
+  provider: false
+atom_feed:
+  hide: true
+analytics:
+  provider: false
+
+include:
+  - _pages
+  - files
+exclude:
+  - AGENTS.md
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .bundle
+  - .github
+  - .sass-cache
+  - .jekyll-cache
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - local
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      share: false
+      related: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+timezone: America/New_York
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
