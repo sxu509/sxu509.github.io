@@ -50,6 +50,12 @@
 .page__title { margin-bottom: 1em; }
 .author__avatar img { border-radius: 6px; }
 .page__content img { border-radius: 4px; }
+.personal-photos { width: 50%; }
+
+@media screen and (min-width: 600px) {
+  .personal-photos.half > img { width: calc(50% - 0.25em); }
+}
+
 .author__urls-wrapper .btn { color: var(--global-text-color) !important; }
 
 .page__footer {

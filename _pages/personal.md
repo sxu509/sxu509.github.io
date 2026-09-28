@@ -12,4 +12,4 @@ gallery:
 
 Outside of research, I spend most of my free time with my partner and our two dogs, **PP and Bobby**. They join us on hikes, weekend trips, and everyday adventures.
 
-{% include gallery caption="PP and Bobby" %}
+{% include gallery caption="PP and Bobby" class="personal-photos" %}
