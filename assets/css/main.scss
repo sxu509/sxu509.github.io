@@ -51,10 +51,19 @@
 .author__avatar img { border-radius: 6px; }
 .page__content img { border-radius: 4px; }
 .personal-photos {
-  justify-content: flex-start;
-  column-gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2em 0;
 }
-.personal-photos.half > img { width: 80px; max-width: 100%; }
+.personal-photos > figure {
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+}
+.personal-photos img { display: block; margin-bottom: 0.5em; }
 
 .author__urls-wrapper .btn { color: var(--global-text-color) !important; }
 
@@ -72,7 +81,7 @@ html[data-theme="dark"] {
 
 @media screen and (min-width: 925px) {
   .page { padding-right: 4%; }
-  .personal-photos.half > img { width: 120px; }
+  .personal-photos > figure { width: 120px; }
   .sidebar {
     position: sticky;
     height: auto;
